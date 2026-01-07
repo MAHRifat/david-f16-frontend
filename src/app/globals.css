@@ -3,7 +3,7 @@
 @plugin "tailwindcss-animate";
 
 :root {
-  --background: #100F16; /* Deep Navy from image */
+  --background: #100F16; 
   --foreground: #FFFFFF;
   
   /* Brand Colors - Cyan/Blue gradient feel */
@@ -25,6 +25,7 @@
   --border: #666666;
   --input: #1E293B;
   --ring: #06B6D4;
+  --color-blueMain: #0BA5EC;
 }
 
 @theme {
@@ -43,6 +44,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-blueMain: var(--blueMain);
 }
 
 body {
@@ -50,4 +52,31 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.home_bg{
+  border: 1px solid #2B2B2F;
+  background: rgba(11, 165, 236, 0.08);
+}
+
+.glass{
+border: 1px solid rgba(255, 255, 255, 0.35);
+/* box-shadow: -11.15px -10.392px 48px -12px rgba(0, 0, 0, 0.15), -1.858px -1.732px 12px -8px rgba(0, 0, 0, 0.15), 2.146px 2px 9.24px 0 rgba(255, 255, 255, 0.13) inset, 1.217px 1.134px 4.62px 0 rgba(255, 255, 255, 0.13) inset; */
+/* backdrop-filter: blur(7.579999923706055px); */
+}
+
+.have_questions{
+  border: 1px solid rgba(11, 165, 236, 0.30);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
 }

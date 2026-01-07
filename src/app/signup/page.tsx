@@ -12,7 +12,7 @@ export default function SignUpPage() {
 
     return (
         <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[calc(100vh-100px)]">
-            <div className="w-full max-w-xl space-y-6">
+            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-xl">
 
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold">Join CapitalizeNow</h1>
@@ -28,7 +28,7 @@ export default function SignUpPage() {
                         "Unlock trends by contributing"
                     ].map((benefit, i) => (
                         <div key={i} className="flex items-center gap-3 text-sm">
-                            <CheckCircle2 className="w-5 h-5 text-cyan-400" />
+                            <CheckCircle2 className="w-5 h-5 text-blueMain" />
                             <span>{benefit}</span>
                         </div>
                     ))}
@@ -51,7 +51,7 @@ export default function SignUpPage() {
                             <button
                                 type="button"
                                 onClick={() => setShowPassword(!showPassword)}
-                                className="absolute right-3 top-3 text-muted-foreground cursor-pointer hover:text-cyan-400 focus:outline-none"
+                                className="absolute right-3 top-3 text-muted-foreground cursor-pointer hover:text-blueMain focus:outline-none"
                             >
                                 {showPassword ? <Eye className="w-5 h-5" /> : <EyeOff className="w-5 h-5" />}
                             </button>
@@ -69,21 +69,21 @@ export default function SignUpPage() {
                             <button
                                 type="button"
                                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                                className="absolute right-3 top-3 text-muted-foreground cursor-pointer hover:text-cyan-400 focus:outline-none"
+                                className="absolute right-3 top-3 text-muted-foreground cursor-pointer hover:text-blueMain focus:outline-none"
                             >
                                 {showConfirmPassword ? <Eye className="w-5 h-5" /> : <EyeOff className="w-5 h-5" />}
                             </button>
                         </div>
                     </div>
 
-                    <Button className="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold h-12 text-lg shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all mt-2">
+                    <Button className="w-full cursor-pointer bg-blueMain hover:bg-blueMain/80 text-white font-bold h-12 text-lg shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)] transition-all mt-2">
                         Sign up
                     </Button>
                 </form>
 
                 <div className="text-center text-sm text-muted-foreground">
                     Already have an account?{" "}
-                    <Link href="/signin" className="text-cyan-400 font-bold hover:underline">
+                    <Link href="/signin" className="text-blueMain font-bold hover:underline cursor-pointer">
                         Sign in
                     </Link>
                 </div>

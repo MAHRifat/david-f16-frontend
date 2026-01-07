@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
 import { PageGlow } from "@/components/layout/page-glow";
+import { ConditionalLayout } from "@/components/layout/conditional-layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +20,9 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.className} min-h-screen bg-background text-foreground antialiased selection:bg-cyan-500/30 selection:text-cyan-200`}>
         <PageGlow />
-        <Navbar />
-        <main className="relative z-10 min-h-[calc(100vh-64px)]">
+        <ConditionalLayout>
           {children}
-        </main>
-        <Footer />
+        </ConditionalLayout>
       </body>
     </html>
   );

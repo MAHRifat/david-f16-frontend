@@ -25,13 +25,13 @@ export function Navbar() {
 
                 {/* Actions */}
                 <div className="flex items-center gap-4">
-                    <div className="hidden md:flex items-center gap-2 px-6 py-2.5 rounded-full border border-cyan-500/30 bg-cyan-500/5">
-                        <div className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-                        <span className="text-xs font-medium text-cyan-400">100% Free Forever</span>
+                    <div className="hidden md:flex items-center gap-2 px-6 py-2.5 rounded-full border border-blueMain/30 bg-blueMain/5">
+                        <div className="h-2 w-2 rounded-full bg-blueMain animate-pulse" />
+                        <span className="text-xs font-medium text-blueMain">100% Free Forever</span>
                     </div>
 
                     <Link href="/signin">
-                        <Button variant="glow" size="sm" className="rounded-full px-6 cursor-pointer">
+                        <Button size="sm" className="rounded-full px-6 cursor-pointer bg-blueMain hover:bg-blueMain/80">
                             Sign In
                         </Button>
                     </Link>
