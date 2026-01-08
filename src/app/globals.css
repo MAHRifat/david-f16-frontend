@@ -80,3 +80,8 @@ border: 1px solid rgba(255, 255, 255, 0.35);
   display: none;
   /* Chrome, Safari, Opera */
 }
+
+.sign_bg{
+  background: rgba(11, 165, 236, 0.1);
+  backdrop-filter: blur(7.579999923706055px);
+}

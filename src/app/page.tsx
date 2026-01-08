@@ -156,15 +156,15 @@ export default function Home() {
             <div className="flex justify-center gap-6 text-sm text-muted-foreground pt-2">
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-blueMain" />
-                No interruption
+                <p className="text-nowrap text-xs sm:text-base">No interruption</p>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-blueMain" />
-                No blind spots
+                <p className="text-nowrap text-xs sm:text-base">No blind spots</p>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-blueMain" />
-                Community verified
+                <p className="text-nowrap text-xs sm:text-base">Community verified</p>
               </div>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function Home() {
                       {item.step}
                     </div>
                     {i < arr.length - 1 && (
-                      <div className="hidden md:block absolute -right-32 top-1/2 -translate-y-1/2 pointer-events-none">
+                      <div className="hidden lg:block absolute -right-32 top-1/2 -translate-y-1/2 pointer-events-none">
                         <Image src="/home/custom-arrow.svg" alt="Arrow" width={60} height={60} className="opacity-60" />
                       </div>
                     )}

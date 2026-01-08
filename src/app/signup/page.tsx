@@ -12,7 +12,7 @@ export default function SignUpPage() {
 
     return (
         <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[calc(100vh-100px)]">
-            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-xl">
+            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-xl sign_bg">
 
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold">Join CapitalizeNow</h1>
@@ -20,7 +20,7 @@ export default function SignUpPage() {
                 </div>
 
                 {/* Benefits Box */}
-                <div className="rounded-xl bg-cyan-950/20 border border-cyan-500/10 p-6 space-y-3">
+                <div className="rounded-xl bg-background p-6 space-y-3 border border-border/50">
                     {[
                         "No email collection",
                         "100% free forever - non-profit",
