@@ -197,7 +197,7 @@ export default function Home() {
             </div>
 
             {/* Bottom Row Tags */}
-            <div className="flex flex-wrap gap-1 w-full">
+            <div className="flex flex-wrap gap-1 w-fit  lg:bg-[#1F292D] p-1.5 rounded-full">
               <Button variant="outline" size="sm" className="rounded-full gap-2 border-blueMain/30 bg-white/5 text-muted-foreground hover:text-white hover:bg-white/10">
                 <Filter className="w-3 h-3" /> Filters
               </Button>
@@ -239,18 +239,32 @@ export default function Home() {
             {/* Add Trend Card */}
             <div
               onClick={() => setIsSubmitModalOpen(true)}
-              className="border border-dashed border-border rounded-2xl flex flex-col items-center justify-center p-8 text-center space-y-4 hover:border-blueMain/50 hover:bg-blueMain/5 transition-colors group cursor-pointer aspect-auto"
+              className="relative border border-dashed border-white/20 rounded-3xl flex flex-col items-center justify-center p-8 text-center space-y-6 hover:border-blueMain/50 hover:bg-blueMain/5 transition-all duration-300 group cursor-pointer aspect-auto bg-[#0BA5EC05]"
             >
-              <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
-                <span className="text-3xl text-blueMain font-light">+</span>
+              {/* Decorative Icons */}
+              <div className="absolute top-4 right-4 text-blueMain/40 group-hover:text-blueMain/60 transition-colors">
+                <Image src="/home/siai.svg" alt="Logo" width={24} height={24} />
               </div>
-              <div>
-                <h3 className="font-semibold">Add Trend?</h3>
-                <p className="text-sm text-muted-foreground max-w-[200px] mx-auto">
-                  When you see something that breaks, submit it here.
+              <div className="absolute bottom-2 left-4 text-blueMain/40 group-hover:text-blueMain/60 transition-colors">
+                <Image src="/home/siai.svg" alt="Logo" width={24} height={24} />
+              </div>
+
+              <div className="w-16 h-16 rounded-full border border-white/10 bg-black/40 flex items-center justify-center shadow-[0_0_20px_rgba(11,165,236,0.3)] group-hover:scale-110 group-hover:shadow-[0_0_30px_rgba(11,165,236,0.5)] transition-all duration-300">
+                <span className="text-3xl text-white font-light">+</span>
+              </div>
+              <div className="space-y-2">
+                <h3 className="text-xl font-bold text-white">Add Trend?</h3>
+                <p className="text-sm text-muted-foreground max-w-[220px] mx-auto leading-relaxed">
+                  What you&apos;re seeing before it goes mainstream
                 </p>
               </div>
-              <Button variant="glow" size="sm" className="rounded-full bg-blueMain hover:bg-blueMain/80 text-white border-none gap-2 h-9">Click to Submit</Button>
+              <Button
+                variant="outline"
+                size="sm"
+                className="rounded-full border-white/20 bg-transparent text-white hover:bg-white/10 hover:border-blueMain/20 hover:text-blueMain transition-all px-8 h-11 text-base font-semibold"
+              >
+                Click to Submit
+              </Button>
             </div>
 
             {trends.map((trend, i) => (
@@ -302,8 +316,8 @@ export default function Home() {
         <LayoutWrapper>
           <div className="text-center space-y-2 home_bg p-10 rounded-2xl">
             <div className="flex items-center gap-2">
-              <CircleAlertIcon className="text-blueMain" size={24} />
-              <h2>Brand</h2>
+              <CircleAlertIcon className="text-blueMain" size={26} />
+              <h1 className="text-xl font-bold">Brand-Free Zone</h1>
             </div>
             <p className="text-muted-foreground text-sm text-start">
               This platform is 100% organic. Any established brands, obvious promotions, or sponsored content will be removed instantly. We're here to spot genuine trends, not market products. CapitalizeNow is a non-profit, community-run platform. We don't collect emails, we don't have sponsors, and we never will. This is by creators, for creators.

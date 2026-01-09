@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckCircle2, Eye, EyeOff } from "lucide-react";
+import { CircleCheck, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 
 export default function SignUpPage() {
@@ -12,7 +12,7 @@ export default function SignUpPage() {
 
     return (
         <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[calc(100vh-100px)]">
-            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-xl sign_bg">
+            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-2xl sign_bg">
 
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold">Join CapitalizeNow</h1>
@@ -20,7 +20,7 @@ export default function SignUpPage() {
                 </div>
 
                 {/* Benefits Box */}
-                <div className="rounded-xl bg-background p-6 space-y-3 border border-border/50">
+                <div className="rounded-2xl bg-background p-6 space-y-3 border border-border/50">
                     {[
                         "No email collection",
                         "100% free forever - non-profit",
@@ -28,7 +28,7 @@ export default function SignUpPage() {
                         "Unlock trends by contributing"
                     ].map((benefit, i) => (
                         <div key={i} className="flex items-center gap-3 text-sm">
-                            <CheckCircle2 className="w-5 h-5 text-blueMain" />
+                            <CircleCheck className="w-5 h-5 text-blueMain" />
                             <span>{benefit}</span>
                         </div>
                     ))}

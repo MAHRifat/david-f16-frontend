@@ -18,7 +18,7 @@ export default function SignInPage() {
 
     return (
         <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[calc(100vh-100px)] ">
-            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-xl sign_bg">
+            <div className="w-full max-w-xl space-y-6 home_bg p-6 rounded-2xl sign_bg">
 
                 <div className="space-y-2">
                     <h1 className="text-3xl font-bold">Sign In to CapitalizeNow</h1>
@@ -26,7 +26,7 @@ export default function SignInPage() {
                 </div>
 
                 {/* Benefits Box */}
-                <div className="rounded-xl bg-background border border-border/50 p-6 space-y-3">
+                <div className="rounded-2xl bg-background border border-border/50 p-6 space-y-3">
                     {[
                         "No email collection",
                         "100% free forever - non-profit",

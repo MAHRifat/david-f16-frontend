@@ -51,7 +51,7 @@ export default function DashboardLayout({
                         Total 8 Trends
                     </div>
                     <Link href="/signin">
-                        <Button className="bg-blueMain hover:bg-blueMain/90 text-white rounded-full px-4 md:px-6 py-1 text-xs md:text-sm font-bold shadow-[0_0_20px_-5px_#0BA5EC]">
+                        <Button className="bg-blueMain hover:bg-blueMain/90 text-white rounded-full px-4 text-xs md:text-sm font-bold shadow-[0_0_20px_-5px_#0BA5EC]">
                             Sign Out
                         </Button>
                     </Link>
